@@ -1,0 +1,36 @@
+{
+  "name": "mfe_vue_home",
+  "version": "1.0.0",
+  "main": "dist/mfe_vue_home.umd.js",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --formats umd --name mfe_vue_home src/spaEntry.js",
+    "lint": "vue-cli-service lint"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "4.1.0",
+    "@vue/cli-plugin-eslint": "4.1.0",
+    "@vue/cli-service": "4.1.0",
+    "babel-eslint": "10.0.3",
+    "core-js": "3.4.4",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-vue": "5.0.0",
+    "node-sass": "4.13.1",
+    "sass-loader": "8.0.2",
+    "vue-cli-plugin-single-spa": "1.1.0",
+    "vue-template-compiler": "2.6.11",
+    "webpack": "4.41.5"
+  },
+  "repository": "git@github.com:alopezjs/mfe_vue_home.git",
+  "author": "AndresLopez <andres_lopez@crgl-thirdparty.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-vue": "^2.15.0",
+    "firebase": "^7.15.5",
+    "single-spa-vue": "^1.8.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4",
+    "vue-toastr": "^2.1.2"
+  }
+}

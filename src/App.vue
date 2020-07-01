@@ -2,12 +2,8 @@
   <div id="vue-app">
     <div id="vue-component" class="container">
       <div class="main">
-        <h1>
-          <img src="https://vuejs.org/images/logo.png" width="50" height="50" />
-          Vue App
-        </h1>
-
-        <router-view></router-view>
+        <img style="margin: auto" src="https://vuejs.org/images/logo.png" />
+        <p class="primary">Welcome to the home section</p>
       </div>
     </div>
   </div>
@@ -22,13 +18,7 @@ export default {
   mounted: () => {
     console.log('mounted');
     firebase.auth().onAuthStateChanged(
-      (user) => {
-        if (user) {
-          console.log('USER', user);
-        } else {
-          console.log('Not logged');
-        }
-      },
+      (user) => {},
       (error) => {
         console.log('ERROR onAuthStateChanged', error);
       },
@@ -46,19 +36,14 @@ export default {
 #vue-component {
   display: block;
   .main {
-    #links {
-      margin: 30px 0 30px;
-      a {
-        padding: 10px;
-        display: inline-block;
-        width: 75px;
-        text-align: center;
-        &.router-link-exact-active {
-          background-color: #007bff;
-          color: #fff;
-          border-radius: 4px;
-        }
-      }
+    text-align: center;
+    padding-top: 20px;
+    img {
+      margin: auto;
+      width: 100px;
+    }
+    p.primary {
+      font-size: 20px;
     }
   }
 }
